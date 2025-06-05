@@ -17,12 +17,13 @@ const app = express(server);
 const version = packageJson.version;
 const discord = 'https://discord.gg/unblocking';
 const routes = [
-  { route: '/mastery', file: './static/loader.html' },
-  { route: '/apps', file: './static/apps.html' },
-  { route: '/gms', file: './static/gms.html' },
-  { route: '/lessons', file: './static/agloader.html' },
-  { route: '/info', file: './static/info.html' },
-  { route: '/mycourses', file: './static/loading.html' }
+  { route: '/mastery/?login.i-ready.com', file: './static/loader.html' },
+  { route: '/apps/?login.i-ready.com', file: './static/apps.html' },
+  { route: '/gms/?login.i-ready.com', file: './static/gms.html' },
+  { route: '/lessons/?login.i-ready.com', file: './static/agloader.html' },
+  { route: '/info/?login.i-ready.com', file: './static/info.html' },
+  { route: '/mycourses/?login.i-ready.com', file: './static/loading.html' },
+  { route: '/app/?login.i-ready.com', file: './static/index.html' },
 ];
 
 app.use(express.json());
